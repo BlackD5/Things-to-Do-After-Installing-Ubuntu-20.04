@@ -1,0 +1,224 @@
+1. Check and Install Package Updates
+-------------------------------------
+The first step is to check and install updates to keep your computer’s software up to date. This is the single most important task you need to do to protect your 
+system.
+
+
+freestar
+To install updates, open the Update Manager by pressing ‘Alt+F2’, then enter ‘update-manager’ and hit Enter.
+After the Update Manager opens up, if there are updates to be installed, you can review and select pending updates and also check for new updates. Click the 
+‘Install Updates’ button to upgrade the selected packages, you will be prompted to enter your password, provide it to proceed.
+Alternatively, open a terminal window and simply run the following commands.
+
+$ sudo apt-get update && sudo apt-get dist-upgrade
+Note that Ubuntu will keep notifying you for security updates and non-security updates on a daily and weekly basis respectively. You can also configure your system to
+automatically install updates, under the Update Manager.
+______________________________________________________________________________________________________________________________________________________________________
+
+2. Set Up Livepatch
+-------------------
+Livepatch (or Canonical Livepatch Service) enables Ubuntu users to apply critical kernel patches without rebooting. This also helps to keep your system secure by 
+applying security updates without a system restart. It is free for personal use with up to 3 machines. To enable it, all you need is an Ubuntu One account.
+
+Go to Activities, search for Livepatch and open it, or simply open Software & Updates and click on the Livepatch tab. If you have an Ubuntu One account, simply 
+Sign in, otherwise create one.
+______________________________________________________________________________________________________________________________________________________________________
+
+3. Opt-in/Opt-out from Problem Reporting
+----------------------------------------
+Canonical uses reports of technical problems to help improve Ubuntu. You can choose to send error reports to the Ubuntu developers or not. To edit the settings, 
+click on Activities, search and open Settings, then go to Privacy, then Diagnostics.
+By default, sending error reports is configured to be done Manually. You can also choose Never (not to send at all) or Automatic (so that the system keeps sending 
+error reports automatically every time they happen).
+To fully understand how the information you share is used, click on Learn more.
+Configure Ubuntu Error Reporting
+______________________________________________________________________________________________________________________________________________________________________
+
+4. Sign in to Snap Store
+------------------------
+If you have a Snap Store account, you can get access to private snaps, from app developers. Alternatively, use your Ubuntu One account to sign in. But you do not 
+eed an account to install public snaps.
+To sign into Snap Store, open Ubuntu Software, click on the menu option, then click on Sign in.
+______________________________________________________________________________________________________________________________________________________________________
+
+5. Connect to Online Accounts
+-----------------------------
+Next, sign in to your online accounts to enable you to connect to your data in the cloud. Go to Activities, search and open Settings, then click on Online Accounts.
+
+______________________________________________________________________________________________________________________________________________________________________
+
+6. Set Up a Mail Client
+-----------------------
+By default, Ubuntu ships with Thunderbird Mail application, which offers cutting edge features such as speed, privacy, and latest technologies.
+
+To open it, click on the Thunderbird icon and set up an existing email account or do a manual configuration as highlighted in the following screenshot.
+______________________________________________________________________________________________________________________________________________________________________
+
+7. Install Your Favorite Browser
+--------------------------------
+The primary means of surfing the internet is by using a browser. Mozilla Firefox (a lightweight and feature-rich browser) is the default web browser in Ubuntu. 
+However, Ubuntu supports several other browsers including Chromium, Chrome, Opera, Konqueror, and many more.
+
+To install your favorite browser, go to the official browser website, and download the .deb package and install it.
+______________________________________________________________________________________________________________________________________________________________________
+
+8. Install VLC Media Player
+---------------------------
+VLC is a simple yet powerful and widely-used multimedia player and framework that plays most if not all multimedia files. It also plays DVDs, Audio CDs, VCDs as well
+as numerous streaming protocols.
+
+It is distributed as a snapcraft for Ubuntu and many other Linux distributions. To install it, open a terminal window and run the following command.
+
+$ sudo snap install vlc
+______________________________________________________________________________________________________________________________________________________________________
+
+9. Install Media Codecs
+-----------------------
+The Ubuntu maintainers want to include only free and open-source software, closed-source packages such as media codecs for common audio and video files such as MP3,
+AVI, MPEG4, and so on, are not provided by default in a standard installation.
+
+To install them, you need to install the ubuntu-restricted-extras meta-package by running the following command.
+
+$ sudo apt install ubuntu-restricted-extras
+______________________________________________________________________________________________________________________________________________________________________
+
+10. Install GNOME Tweaks
+------------------------
+GNOME Tweaks is a simple graphical interface for advanced GNOME 3 settings. It enables you to easily customize your desktop. Although it is designed for the GNOME
+Shell, you can use it in other desktops.
+
+$ sudo apt install gnome-tweaks
+______________________________________________________________________________________________________________________________________________________________________
+
+11. Install Useful GNOME Extensions
+-----------------------------------
+The easiest way to add functionality to GNOME is by using extensions that are available on GNOME’s website. There you will find a multitude of extensions you can 
+choose from. To make installing the extensions really easy, simply install the GNOME shell integration as a browser extension and native host connector.
+
+For example, to install the GNOME host connector for Chrome or Firefox, run these commands.
+
+$ sudo apt install chrome-gnome-shell
+OR
+$ sudo apt install firefox-gnome-shell
+After installing the browser extension, simply open your browser to enable or disable extensions as shown in the following screenshot.
+______________________________________________________________________________________________________________________________________________________________________
+
+12. Install Additional Archive Utilities
+----------------------------------------
+Ubuntu ships with tar, zip and unzip archiving utilities by default. To support different archive files that you can use on Ubuntu, you need to install other 
+additional archiving utilities such as rar, unrar, p7zip-full, and p7zip-rar as shown.
+
+$ sudo apt install rar unrar p7zip-full p7zip-rar
+______________________________________________________________________________________________________________________________________________________________________
+
+13. Select Default Applications
+-------------------------------
+In any desktop operating system, once you double-click a file in the file manager, it will be opened with the default application for that file type. To configure 
+the default applications to open a file type in Ubuntu 20.04, go to Settings, then click Default Applications, and select them from the drop-down menu for each 
+category.
+______________________________________________________________________________________________________________________________________________________________________
+
+14. Configure Keyboard Shortcuts
+--------------------------------
+Using keyboard shortcuts can increase your productivity and save you lots of time when using a computer. To set your keyboard shortcuts, under Settings, simply 
+click on Keyboard Shortcuts.
+______________________________________________________________________________________________________________________________________________________________________
+
+15. Enable GNOME Night Light Mode
+---------------------------------
+GNOME Night Light mode is a protective display mode that helps to protect your eyes from strain and sleeplessness, by making the screen color warmer. To enable
+it, go to Settings, then Displays and click on the Night Light tab. You can schedule when to apply it, time, and color temperature.
+______________________________________________________________________________________________________________________________________________________________________
+
+16. Enable the Canonical Partners Repository
+--------------------------------------------
+The Canonical Partner repository offers some proprietary applications such as Adobe Flash Plugin, that are closed-source but don’t cost any money to use. To 
+enable it, open Software & Updates, once it launches, click on the Other Software tab.
+
+Then check the first option as highlighted in the following screenshot. You will be prompted to enter your password for authentication, enter it to proceed.
+______________________________________________________________________________________________________________________________________________________________________
+
+17. Install Wine for Running Windows Apps
+-----------------------------------------
+If you intend to run Windows applications in Ubuntu 20.04, then you need to install Wine – is an open-source implementation of the Windows API on top of X and 
+POSIX-compliant operating systems, such as Linux, BSD, and macOS. It allows you to integrate and run Windows application cleanly, on Linux desktops by translating 
+Windows API calls into POSIX calls on-the-fly.
+
+To install Wine, run this command.
+
+$ sudo apt install wine winetricks
+______________________________________________________________________________________________________________________________________________________________________
+
+18. Install Steam for Games
+---------------------------
+If you are a gamer, then you also need to install a Steam client for Linux. Steam is the leading video game distribution service that allows you to play and 
+discuss games. Game developers and publishers can also create and distribute their games on Steam.
+
+Run the following command to install the steam client on your Ubuntu 20.04 desktop.
+
+$ sudo apt install steam
+______________________________________________________________________________________________________________________________________________________________________
+
+19. Install Additional Proprietary Graphics Drivers
+----------------------------------------------------
+For gamers, apart from installing steam (as shown above), you also need to install additional graphics drivers to improve your gaming experience on Ubuntu. 
+Although Ubuntu provides open-source graphics drivers, proprietary graphics drivers perform orders of magnitude better than open-source graphics drivers.
+Unlike in earlier versions of Ubuntu, in Ubuntu 20.04, it is much easier to install proprietary graphics drivers without the need to enable third-party 
+repositories or web downloads. Simply go to Software & Updates, then click on Additional Drivers.
+First, the system will search for available drivers, when the search is complete, the list box will list each device for which proprietary drivers could be 
+installed. After making your selections, click Apply Changes.
+______________________________________________________________________________________________________________________________________________________________________
+
+20. Add Your Favorite Apps to the Dock
+--------------------------------------
+To add your favorite applications to the Ubuntu Dock (which is situated on the left side of your desktop by default), click on the Activities overview, search for 
+the application you want e.g terminal, then right-click on it and select Add to Favorites.
+
+______________________________________________________________________________________________________________________________________________________________________
+
+21. Install Laptop Power Saving Tools
+-------------------------------------
+If you are using a laptop, then you might want to install Laptop Mode Tools, a simple and configurable laptop power-saving tool for Linux systems. It helps to 
+extend your laptop’s battery life in so many ways. It also allows you to tweak some other power-related settings using a configuration file.
+
+$ sudo apt install laptop-mode-tools
+______________________________________________________________________________________________________________________________________________________________________
+
+22. Install Apps from the Ubuntu Software and Third-party
+----------------------------------------------------------
+Last but not least, go ahead and install more software that you intend to use. You can do this from the Ubuntu Software (or install apps from third-party 
+repositories).
+
+Simply open the Ubuntu Software and use the search feature to find the software you want. For example, to install midnight commander, click on the search icon,
+type its name, and click on it.
+
+______________________________________________________________________________________________________________________________________________________________________
+
+23. Install Timeshift
+---------------------
+Timeshift is a useful backup utility that creates incremental snapshots of the file system at regular intervals. These snapshots can be used to restore your 
+system to an earlier working state in case of disaster
+
+$ sudo add-apt-repository -y ppa:teejee2008/ppa
+$ sudo apt-get update
+$ sudo apt-get install timeshift
+______________________________________________________________________________________________________________________________________________________________________
+
+24. Install JAVA
+-----------------
+JAVA is the most popular programming language and many applications and websites will not work properly unless you have it installed on your system.
+
+$ sudo apt-get install openjdk-11-jdk
+______________________________________________________________________________________________________________________________________________________________________
+
+25. Try Different Desktop Environments
+--------------------------------------
+Ubuntu distribution is not only restricted to Gnome, but it can also be used with different desktop environments such as cinnamon, mate, KDE and others.
+
+To install cinnamon you can use the following command.
+
+$ sudo apt-get install cinnamon-desktop-environment
+To install MATE, use the following command.
+
+$ sudo apt-get install ubuntu-mate-desktop
+______________________________________________________________________________________________________________________________________________________________________
